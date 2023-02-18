@@ -1,0 +1,21 @@
+﻿<Window x:Class="AudioApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="AudioReverse" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="727*"/>
+        </Grid.ColumnDefinitions>
+        <Button Name ="StartButton" Content="Начать запись" HorizontalAlignment="Left" Margin="102,260,0,0" VerticalAlignment="Top" Height="92" Width="180" FontFamily="Bahnschrift" FontSize="16" Click="Button_Click" Background="#FF5AB304" Grid.Column="1"/>
+        <Button Content="Стоп запись" HorizontalAlignment="Left" Margin="349,259,0,0" VerticalAlignment="Top" Height="92" Width="180" FontFamily="Bahnschrift" FontSize="16" Click="Button_Click_1" Background="#FFB10000" Cursor="" Grid.Column="1"/>
+        <Label Name="LabelForTimer" HorizontalAlignment="Left" Margin="248,116,0,0" VerticalAlignment="Top" Height="52" Width="142" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Grid.Column="1"/>
+        <TextBox Name="PathToCatalog" HorizontalAlignment="Left" Margin="26,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="645" FontFamily="Bahnschrift" Height="30" FontSize="20" Grid.ColumnSpan="2"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="72,90,0,0" VerticalAlignment="Top" Height="40" Width="79" Background="#FF59C800" Click="Button_Click_2" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,17,0,0" TextWrapping="Wrap" Text="Введите текст" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="Bahnschrift SemiBold" FontSize="14"/>
+        <Button Name = "AudioPlay" Grid.Column="1" Content="Воспроизвести запись" HorizontalAlignment="Left" Margin="247,200,0,0" VerticalAlignment="Top" Width="140" Height="29" Background="GreenYellow" Click="Button_Click_3"/>
+    </Grid>
+</Window>
